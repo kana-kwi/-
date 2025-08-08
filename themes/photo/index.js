@@ -388,7 +388,14 @@ const Layout404 = props => {
           />
           <i className='fas fa-search absolute right-0 my-auto p-2'></i>
         </div>
-      
+      </div>
+      {/* 底部导航 */}
+      <div className='h-full flex-grow grid grid-cols-4 gap-4'>
+        <LatestPostsGroup {...props} />
+        <CategoryGroup {...props} />
+        <ArchiveDateList {...props} />
+        <TagGroups {...props} />
+      </div>
     </>
   )
 }
